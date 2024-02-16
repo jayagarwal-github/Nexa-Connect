@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "482251366399",
+    "project_id": "nexa-connect",
+    "storage_bucket": "nexa-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:482251366399:android:1b99c7f11c8cedcdc751ca",
+        "android_client_info": {
+          "package_name": "com.example.nexaconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "482251366399-6uh6751dpjedc73791srpsvii0a7tk8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nexaconnect",
+            "certificate_hash": "8fa261ef9706ee555ea3d154126ceb4b4fb281cb"
+          }
+        },
+        {
+          "client_id": "482251366399-oa9s6mk1a6us29gvs9am4i6gilq76vc2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDgZVm5pAPSNWlUjL4Il-u_4CKOdPEj7Uw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "482251366399-oa9s6mk1a6us29gvs9am4i6gilq76vc2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
