@@ -21,7 +21,7 @@ NexaConnect is a social media app where users can create and share posts, like p
 1. Clone the repository:
    
    ```bash
-   git clone https://github.com/yourusername/nexaconnect.git
+   git clone https://github.com/jayagarwal-github/nexaconnect.git
    ```
 3. Open the project in Android Studio.
 4. Add your Firebase project configuration file (`google-services.json`) to the `app` directory.
