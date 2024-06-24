@@ -27,6 +27,8 @@ NexaConnect is a social media app where users can create and share posts, like p
 4. Add your Firebase project configuration file (`google-services.json`) to the `app` directory.
 5. Build and run the app on your Android device or emulator.
 
+ ##  APK Download :- [ https://shorturl.at/PREhy ]
+
 ## Usage
 
 1. Sign up or log in to your account.
