@@ -9,9 +9,9 @@
               <option name="connection">
                 <ConnectionSetting>
                   <option name="appId" value="com.example.nexaconnect" />
-                  <option name="mobileSdkAppId" value="1:482251366399:android:1b99c7f11c8cedcdc751ca" />
-                  <option name="projectId" value="nexa-connect" />
-                  <option name="projectNumber" value="482251366399" />
+                  <option name="mobileSdkAppId" value="1:42157418033:android:7f063ede6feea834aa5710" />
+                  <option name="projectId" value="nexa-connect-78de6" />
+                  <option name="projectNumber" value="42157418033" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

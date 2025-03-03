@@ -59,7 +59,7 @@
     <string name="sign_up">Sign up</string>
     <string name="already_registered_sign_in">Already Registered , Sign In !</string>
     <string name="not_register_sign_up">Not Register! Sign up</string>
-    <string name="Default_web_client_id">default_web_client_id</string>
+    <string name="default_web_client_id" translatable="false">42157418033-pq672a13e0l8358i6tn7o74qcsqbl2nh.apps.googleusercontent.com</string>
     <string name="post">POST</string>
     <string name="make_your_post">Make your Post.....</string>
     <string name="not_yet_implemented">Not yet implemented</string>

@@ -1,5 +1,6 @@
 package com.example.nexaconnect
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +16,7 @@ import com.google.firebase.Firebase
 import com.google.firebase.auth.auth
 
 
-class PostAdapter(options: FirestoreRecyclerOptions<Post> , val listener: IPostAdapter) : FirestoreRecyclerAdapter<Post, PostAdapter.PostViewHolder>(        //FirestoreRecyclerAdapter will take care of everything
+class PostAdapter(options: FirestoreRecyclerOptions<Post>, private val listener: IPostAdapter) : FirestoreRecyclerAdapter<Post, PostAdapter.PostViewHolder>(        //FirestoreRecyclerAdapter will take care of everything
     options
 ) {
 
@@ -37,21 +38,38 @@ class PostAdapter(options: FirestoreRecyclerOptions<Post> , val listener: IPostA
     }
 
     override fun onBindViewHolder(holder: PostViewHolder, position: Int, model: Post) {
-        holder.postText.text = model.text
-        holder.userText.text = model.createdBy.displayName
-        Glide.with(holder.userImage.context).load(model.createdBy.imageUrl).circleCrop().into(holder.userImage)
-        holder.likeCount.text = model.likedBy.size.toString()
-        holder.createdAt.text = Utils.getTimeAgo(model.createdAt)
 
-        val auth = Firebase.auth
-        val currentUserId = auth.currentUser!!.uid
-        val isLiked = model.likedBy.contains(currentUserId)
+        try {
+            Log.d("PostAdapter", "Binding view holder for position $position")
 
-        if(isLiked){
-            holder.likeButton.setImageDrawable(ContextCompat.getDrawable(holder.likeButton.context,R.drawable.baseline_favorite_liked))
-        }
-        else{
-            holder.likeButton.setImageDrawable(ContextCompat.getDrawable(holder.likeButton.context , R.drawable.baseline_favorite_border_24))
+            holder.postText.text = model.text
+            holder.userText.text = model.createdBy.displayName
+            Glide.with(holder.userImage.context).load(model.createdBy.imageUrl).circleCrop()        //circleCrop() is used to round the profile photo
+                .into(holder.userImage)
+            holder.likeCount.text = model.likedBy.size.toString()
+            holder.createdAt.text = Utils.getTimeAgo(model.createdAt)
+
+            val auth = Firebase.auth
+            val currentUserId = auth.currentUser!!.uid
+            val isLiked = model.likedBy.contains(currentUserId)
+
+            if (isLiked) {
+                holder.likeButton.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        holder.likeButton.context,
+                        R.drawable.baseline_favorite_liked
+                    )
+                )
+            } else {
+                holder.likeButton.setImageDrawable(
+                    ContextCompat.getDrawable(
+                        holder.likeButton.context,
+                        R.drawable.baseline_favorite_border_24
+                    )
+                )
+            }
+        }   catch (e: Exception) {
+            Log.e("PostAdapter", "Error binding view holder for position $position", e)
         }
     }
 

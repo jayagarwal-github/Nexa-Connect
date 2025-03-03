@@ -30,6 +30,5 @@
         android:layout_marginTop="60dp"
         android:padding="10dp"
         android:layout_margin="35dp"
-        android:background="@drawable/edittext_round_shape"
-        android:backgroundTint="@android:color/holo_green_light"/>
+       />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,20 +1,20 @@
 {
   "project_info": {
-    "project_number": "482251366399",
-    "project_id": "nexa-connect",
-    "storage_bucket": "nexa-connect.appspot.com"
+    "project_number": "42157418033",
+    "project_id": "nexa-connect-78de6",
+    "storage_bucket": "nexa-connect-78de6.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:482251366399:android:1b99c7f11c8cedcdc751ca",
+        "mobilesdk_app_id": "1:42157418033:android:7f063ede6feea834aa5710",
         "android_client_info": {
           "package_name": "com.example.nexaconnect"
         }
       },
       "oauth_client": [
         {
-          "client_id": "482251366399-6uh6751dpjedc73791srpsvii0a7tk8j.apps.googleusercontent.com",
+          "client_id": "42157418033-6hjfdlm7vr9nn3i2n7rv91th9lsag2i0.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.example.nexaconnect",
@@ -22,20 +22,20 @@
           }
         },
         {
-          "client_id": "482251366399-oa9s6mk1a6us29gvs9am4i6gilq76vc2.apps.googleusercontent.com",
+          "client_id": "42157418033-pq672a13e0l8358i6tn7o74qcsqbl2nh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDgZVm5pAPSNWlUjL4Il-u_4CKOdPEj7Uw"
+          "current_key": "AIzaSyBOkcNR337u9w0XIlq5OFXSn9y91xQbjtA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "482251366399-oa9s6mk1a6us29gvs9am4i6gilq76vc2.apps.googleusercontent.com",
+              "client_id": "42157418033-pq672a13e0l8358i6tn7o74qcsqbl2nh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
