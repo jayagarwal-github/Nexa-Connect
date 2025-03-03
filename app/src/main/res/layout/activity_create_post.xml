@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreatePostActivity">
+    tools:context=".CreatePostActivity"
+    android:noHistory="true">
 
     <EditText
         android:id="@+id/editpost"
@@ -18,7 +19,8 @@
         android:layout_marginTop="40dp"
         android:gravity="top"
         android:padding="10dp"
-        android:layout_margin="12dp" />
+        android:layout_margin="12dp"
+        tools:ignore="Autofill,TextFields" />
     <Button
         android:id="@+id/post"
         android:text="@string/post"

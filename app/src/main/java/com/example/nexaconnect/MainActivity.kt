@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
         binding.add.setOnClickListener {
             val createPostActivity = Intent(this, CreatePostActivity::class.java)
             startActivity(createPostActivity)
+            finish()    // This removes MainActivity from the stack
         }
 
         setUpRecyclerView()
@@ -33,7 +34,7 @@ class MainActivity : AppCompatActivity(), IPostAdapter {
     private fun setUpRecyclerView() {
         postDao = PostDao()
         val postCollections = postDao.postCollections
-        val query = postCollections.orderBy("createdAt", Query.Direction.ASCENDING)
+        val query = postCollections.orderBy("createdAt", Query.Direction.DESCENDING)
         val recyclerViewOptions = FirestoreRecyclerOptions.Builder<Post>().setQuery(query, Post::class.java).build()
 
         adapter = PostAdapter(recyclerViewOptions, this)

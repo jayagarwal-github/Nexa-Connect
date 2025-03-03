@@ -77,7 +77,7 @@ class CreatePostActivity : AppCompatActivity() {
             Toast.makeText(this, "Please wait while post is being created...", Toast.LENGTH_SHORT).show()
             val mainActivity = Intent(this, MainActivity::class.java)
             startActivity(mainActivity)
-            super.onBackPressed()
+            finish()
         } else {
             if (binding.editpost.text.toString().isNotEmpty()) {
                 // Show confirmation dialog if there's unsaved content
@@ -87,14 +87,18 @@ class CreatePostActivity : AppCompatActivity() {
                     .setPositiveButton("Discard") { _, _ ->
                         val mainActivity = Intent(this, MainActivity::class.java)
                         startActivity(mainActivity)
+                        finish()
                     }
                     .setNegativeButton("Keep Editing", null)
                     .show()
-            } else {
+                 }
+            else {
                 val mainActivity = Intent(this, MainActivity::class.java)
                 startActivity(mainActivity)
+                super.onBackPressed()
             }
         }
+
     }
 
     override fun onStart() {
